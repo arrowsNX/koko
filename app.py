@@ -17,12 +17,12 @@ I am Koloina, a researcher interested in the habitability of exoplanets and radi
 This app filters and analyzes radio intensity data from the Perseus molecular cloud to help understand its structure and characteristics.
 """)
 
-# Upload data file
+
 
 
 
     # Load the data
-    data = np.loadtxt(perseus_radio.dat)
+    data = np.loadtxt('perseus_radio.dat')
 
     # 2. Data exploration
     min_intensity = np.min(data)
