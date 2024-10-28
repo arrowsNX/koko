@@ -16,13 +16,9 @@ st.write("""
 I am Koloina, a researcher interested in the habitability of exoplanets and radio astronomy.
 This app filters and analyzes radio intensity data from the Perseus molecular cloud to help understand its structure and characteristics.
 """)
-
-
-
-
-
-    # Load the data
-   data = np.loadtxt('perseus_radio.dat')
+uploaded_file = st.file_uploader("perseus_radio.dat", type='dat')
+# Load the data
+   data = pd.loadtxt('perseus_radio.dat')
 
 
     # 2. Data exploration
