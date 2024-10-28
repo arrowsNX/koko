@@ -1,2 +1,3 @@
 matplotlib
 scipy
+perseus_radio.dat
