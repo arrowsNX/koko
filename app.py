@@ -18,11 +18,11 @@ This app filters and analyzes radio intensity data from the Perseus molecular cl
 """)
 
 # Upload data file
-uploaded_file = st.file_uploader("Choose a .dat file", type='dat')
+uploaded_file = st.perseus_radio.dat
 
 if uploaded_file is not None:
     # Load the data
-    data = np.loadtxt(uploaded_file)
+    data = np.loadtxt(perseus_radio.dat)
 
     # 2. Data exploration
     min_intensity = np.min(data)
