@@ -22,7 +22,8 @@ This app filters and analyzes radio intensity data from the Perseus molecular cl
 
 
     # Load the data
-    data = np.loadtxt('perseus_radio.dat')
+   data = np.loadtxt('perseus_radio.dat')
+
 
     # 2. Data exploration
     min_intensity = np.min(data)
