@@ -18,6 +18,8 @@ This app filters and analyzes radio intensity data from the Perseus molecular cl
 """)
 uploaded_file = st.file_uploader("perseus_radio.dat", type='dat')
 # Load the data
+
+if uploaded_file is not None:
    data = pd.loadtxt('perseus_radio.dat')
 
 
