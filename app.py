@@ -18,9 +18,9 @@ This app filters and analyzes radio intensity data from the Perseus molecular cl
 """)
 
 # Upload data file
-uploaded_file = st.perseus_radio.dat
 
-if uploaded_file is not None:
+
+
     # Load the data
     data = np.loadtxt(perseus_radio.dat)
 
